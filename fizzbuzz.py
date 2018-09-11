@@ -1,7 +1,7 @@
 """
 fizzbuzz.py
-Author: <your name here>
-Credit: <list sources used, if any>
+Author: Andrew Chen
+Credit: no one :(
 
 Assignment:
 
@@ -44,3 +44,26 @@ Fizz
 Fizz
 Buzz
 """
+#Inputs
+num = int(input("How many numbers shall we print? ")) 
+fizz = int(input("For multiples of what number shall we print 'Fizz'? ")) 
+buzz = int(input("For multiples of what number shall we print 'Buzz'? ")) 
+
+#Generates nunmbers from 1 to num
+for x in range(1, num+1):
+    
+#Checks if current number has a remainder of 0 when divided by both fizz and buzz
+    if x % fizz == 0 and x % buzz == 0:
+        print ("FizzBuzz")
+        
+#Checks if current number has a remainder of 0 when divided by fizz
+    elif x % fizz == 0:
+        print ("Fizz")
+        
+#Checks if current number has a remainder of 0 when divided by buzz
+    elif x % buzz == 0:
+        print ("Buzz")
+        
+#Otherwise, prints the number itself
+    else:
+        print(x)
